@@ -1,8 +1,9 @@
+from Program import Program
 class Lecturer:
-    def __init__(self, lecrank, lecfname, leclname, lecdept):
+    def __init__(self, lecrank, lecfname, leclname, lecdept: Program):
         self.lecrank = lecrank    
         self.lecfname = lecfname  
         self.leclname = leclname  
         self.lecdept = lecdept
     def __str__(self) -> str:
-        return f"{self.lecrank} ,{self.lecfname},{self.leclname},{self.lecdept}"
+        return f"{self.lecrank} ,{self.lecfname},{self.leclname},(สาขา{self.lecdept})"
